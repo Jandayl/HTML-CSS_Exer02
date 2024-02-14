@@ -7,17 +7,35 @@
             border-style: solid;
             border-width: 5px;
             border-color: rgb(134, 21, 129);
+            background-color: white;
             flex-wrap: wrap;
             justify-content: space-around;
             align-items: start;
             align-content: space-between;
             
         }
-
+        .flex-project {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: start;
+            align-content: space-between;
+        }
         .flex-logo {
             align-content: flex-start;
         }
         .flex-item {
+            border-style: dashed;
+            border-width: 3px;
+            border-color:rgb(99, 65, 138);
+            color: rgb(99, 65, 138, 0.5);
+            background-color: rgb(145, 52, 122, 0.2);
+            align-items: end;
+            align-content: space-around;
+            font-size: xx-large;
+            
+        }
+        .flex-proj {
             border-style: dashed;
             border-width: 3px;
             border-color:rgb(99, 65, 138);
@@ -37,9 +55,10 @@
             color: rgb(99, 65, 138, 0.5);
             font-size: larger;
         }
+
     </style>
 
-    <body>
+    <body bgcolor= "beige">
         <div class="flex-container">
             <div class="flex-logo">
                 <img src ="/home/user/HTML-CSS_Exer02/Dlogo" height="50px" width="50px">
@@ -59,11 +78,33 @@
         </div>
         <hr/>
         <h2 style="text-align: center;"> Featured Photo </h2>
-        <div>
-            <img src="/home/user/HTML-CSS_Exer02/FPhoto.jpg" height="250px" width="250px">
+        <div class="flex-project">
+            <div class="flex-item">
+                <img src="/home/user/HTML-CSS_Exer02/FPhoto.jpg" height="250px" width="250px" >
+            </div>
         </div>
-
-
+        <h2 style="text-align: center;"> Feature Projects</h2>
+        <div class="flex-project">
+            <div class="flex-item">
+                <img src ="/home/user/HTML-CSS_Exer02/Dlogo" height="100px" width="100px">
+            </div>
+            <div class="flex-item">
+                <img src ="/home/user/HTML-CSS_Exer02/Dlogo" height="100px" width="100px">
+            </div>
+            <div class="flex-item">
+                <img src ="/home/user/HTML-CSS_Exer02/Dlogo" height="100px" width="100px">
+            </div>
+            <div class="flex-item">
+                <img src ="/home/user/HTML-CSS_Exer02/Dlogo" height="100px" width="100px">
+            </div>
+        </div>
+        <br>
+        <div style="clear: both;">
+            <h2 style="float: left;"> Skills</h2>
+            <h2 style="float: right;"> Autobiography</h2>
+        </div>
+        <div>
+            
         </div>
     </body>
 </html>
