@@ -7,6 +7,7 @@ Degree Program: BS Computer Science
 Live Website Link: https://jandayl.github.io/HTML-CSS_Exer02/
 
 Steps on how to create Github page:
+    
     Step 1: Open up the repository containing the webpage you want to create a page on.
     Step 2: Click on the "Settings" option beside the "Insights" option
     Step 3: Under "Code and automation", click on "Pages" option.
