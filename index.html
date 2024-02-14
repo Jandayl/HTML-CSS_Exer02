@@ -2,7 +2,7 @@
 <html>
     <title> Dyle's Webpage</title>
     <style>
-        .flex-container {
+        .flex-container { 
             display: flex;
             border-style: solid;
             border-width: 5px;
@@ -18,8 +18,8 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
-            align-items: start;
-            align-content: space-between;
+            align-items: baseline;
+            align-content: flex-start;
         }
         .flex-logo {
             align-content: flex-start;
@@ -32,79 +32,106 @@
             background-color: rgb(145, 52, 122, 0.2);
             align-items: end;
             align-content: space-around;
-            font-size: xx-large;
-            
+            font-size: xx-large;    
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
-        .flex-proj {
-            border-style: dashed;
-            border-width: 3px;
-            border-color:rgb(99, 65, 138);
-            color: rgb(99, 65, 138, 0.5);
-            background-color: rgb(145, 52, 122, 0.2);
+        .flex-bar {
             align-items: end;
             align-content: space-around;
-            font-size: xx-large;
-            
+            font-size: xx-large;    
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
         .flex-photo {
             display:flex;
             flex-wrap: wrap;
             align-items: center;
         }
-        .flex-font {
-            color: rgb(99, 65, 138, 0.5);
-            font-size: larger;
+        .flex-Tbox {
+            border-style: groove;
+            border-width: 3px;
+            border-color:rgb(76, 8, 97);
+            background-color: #560b586b;
+            width: 300px;
+            padding: 5px;
+            text-align: justify;
         }
-
+        .flex-inner {
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
     </style>
 
-    <body bgcolor= "beige">
+    <body bgcolor= "violet">
+
         <div class="flex-container">
             <div class="flex-logo">
-                <img src ="/home/user/HTML-CSS_Exer02/Dlogo" height="50px" width="50px">
+                <img src ="C:\Users\Dyle\HTML-CSS_Exer02\Dlogo.png" height="50px" width="50px">
             </div>
-            <div class=" flex-item">
+            <div class="flex-bar">
                 Home
             </div>
-            <div class=" flex-item">
+            <div class="flex-bar">
                 Projects 
             </div>
-            <div class=" flex-item">
+            <div class="flex-bar">
                 Contact 
             </div>
-            <div class=" flex-item">
+            <div class="flex-bar">
                 About 
             </div>
         </div>
+
         <hr/>
-        <h2 style="text-align: center;"> Featured Photo </h2>
+        
+        <h2 style="text-align: center; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" > Featured Photo </h2>
         <div class="flex-project">
             <div class="flex-item">
-                <img src="/home/user/HTML-CSS_Exer02/FPhoto.jpg" height="250px" width="250px" >
+                <img src="C:\Users\Dyle\HTML-CSS_Exer02\FPhoto.jpg" height="250px" width="250px" >
             </div>
         </div>
-        <h2 style="text-align: center;"> Feature Projects</h2>
+        <h2 style="text-align: center; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" > Feature Projects</h2>
         <div class="flex-project">
             <div class="flex-item">
-                <img src ="/home/user/HTML-CSS_Exer02/Dlogo" height="100px" width="100px">
+                <img src ="C:\Users\Dyle\HTML-CSS_Exer02\Dlogo.png" height="100px" width="100px">
             </div>
             <div class="flex-item">
-                <img src ="/home/user/HTML-CSS_Exer02/Dlogo" height="100px" width="100px">
+                <img src ="C:\Users\Dyle\HTML-CSS_Exer02\Dlogo.png" height="100px" width="100px">
             </div>
             <div class="flex-item">
-                <img src ="/home/user/HTML-CSS_Exer02/Dlogo" height="100px" width="100px">
+                <img src ="C:\Users\Dyle\HTML-CSS_Exer02\Dlogo.png" height="100px" width="100px">
             </div>
             <div class="flex-item">
-                <img src ="/home/user/HTML-CSS_Exer02/Dlogo" height="100px" width="100px">
+                <img src ="C:\Users\Dyle\HTML-CSS_Exer02\Dlogo.png" height="100px" width="100px">
             </div>
         </div>
-        <br>
-        <div style="clear: both;">
-            <h2 style="float: left;"> Skills</h2>
-            <h2 style="float: right;"> Autobiography</h2>
-        </div>
-        <div>
-            
+
+        <div class="flex-project">
+            <div class="flex-inner">
+                <div class="flex-project">
+                    <h2>Skills</h2>
+                </div>
+                <div class="flex-Tbox">
+                    Skills: <br>
+                    Perseverance <br>
+                    Decisive Strike <br>
+                    Courage <br>
+                    Judgement <br>
+                    Justice <br>
+                </div>    
+            </div>
+            <div class="flex-inner">
+                <div class="flex-project">
+                    <h2>Autobiography</h2>
+                </div>
+                <div class="flex-Tbox">
+                    Born into the noble Crownguard family, along with his younger sister Lux, <br>
+                    Garen knew from an early age that he would be expected to defend the <br>
+                    throne of Demacia with his life. His father, Pieter, was a decorated military <br>
+                    officer, while his aunt Tianna was Sword-Captain of the elite Dauntless Vanguard <br>
+                    and both were recognized and greatly respected by King Jarvan III. <br>
+                </div>    
+            </div>
         </div>
     </body>
 </html>
